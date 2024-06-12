@@ -3,7 +3,7 @@ const filterList = document.querySelector('[data-filter-list]');
 const clearBtn = document.querySelector('[data-clear-btn]');
 
 const fetchData = async function() {
-  const data = await fetch('../../data.json');
+  const data = await fetch('data.json');
   const response = await data.json();
   response.forEach(function(job) {
     Card(job)
@@ -143,7 +143,7 @@ clearBtn.addEventListener('click', function() {
 
 let filters = [];
 const filterJobs = async function(filter) {
-  const data = await fetch('../../data.json');
+  const data = await fetch('data.json');
   const response = await data.json();
   jobList.innerHTML = '';
   if (Array.isArray(filter)) {

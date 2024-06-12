@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+:root {
+  --primary: 180deg 29% 50%;
+  --background: 180 52% 96%;
+  --surface: 180 31% 95%;
+  --Dark-Grayish-Cyan: 180deg 8% 52%;
+  --Very-Dark-Grayish-Cyan: 180deg 14% 20%;
+}
+}
